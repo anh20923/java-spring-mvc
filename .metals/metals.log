@@ -586,3 +586,15 @@ INFO: Unsupported notification method: $/setTrace
 2026.02.06 17:40:15 WARN  no build target for: C:\Users\Anh\Desktop\HoidanIT\Java backend\2.1 Java MVC - code\01-java-spring-laptopshop-starter\src\main\java\vn\hoidanit\laptopshop\LaptopshopApplication.java
 2026.02.06 17:40:15 INFO  no build target found for C:\Users\Anh\Desktop\HoidanIT\Java backend\2.1 Java MVC - code\01-java-spring-laptopshop-starter\src\main\java\vn\hoidanit\laptopshop\LaptopshopApplication.java. Using fallback presentation compiler.
 2026.02.06 17:40:14 INFO  no build target found for C:\Users\Anh\Desktop\HoidanIT\Java backend\2.1 Java MVC - code\01-java-spring-laptopshop-starter\src\main\java\vn\hoidanit\laptopshop\LaptopshopApplication.java. Using fallback presentation compiler.
+2026.02.06 17:40:28 WARN  no build target for: C:\Users\Anh\Desktop\HoidanIT\Java backend\2.1 Java MVC - code\01-java-spring-laptopshop-starter\src\main\java\vn\hoidanit\laptopshop\LaptopshopApplication.java
+2026.02.06 17:40:28 INFO  no build target found for C:\Users\Anh\Desktop\HoidanIT\Java backend\2.1 Java MVC - code\01-java-spring-laptopshop-starter\src\main\java\vn\hoidanit\laptopshop\LaptopshopApplication.java. Using fallback presentation compiler.
+2026.02.06 17:40:28 INFO  no build target found for C:\Users\Anh\Desktop\HoidanIT\Java backend\2.1 Java MVC - code\01-java-spring-laptopshop-starter\src\main\java\vn\hoidanit\laptopshop\LaptopshopApplication.java. Using fallback presentation compiler.
+2026.02.06 17:40:28 INFO  no build target found for C:\Users\Anh\Desktop\HoidanIT\Java backend\2.1 Java MVC - code\01-java-spring-laptopshop-starter\src\main\java\vn\hoidanit\laptopshop\LaptopshopApplication.java. Using fallback presentation compiler.
+2026.02.06 17:40:42 INFO  no build target found for C:\Users\Anh\Desktop\HoidanIT\Java backend\2.1 Java MVC - code\01-java-spring-laptopshop-starter\src\main\java\vn\hoidanit\laptopshop\LaptopshopApplication.java. Using fallback presentation compiler.
+2026.02.06 17:40:42 WARN  no build target for: C:\Users\Anh\Desktop\HoidanIT\Java backend\2.1 Java MVC - code\01-java-spring-laptopshop-starter\src\main\java\vn\hoidanit\laptopshop\LaptopshopApplication.java
+2026.02.06 17:40:42 INFO  no build target found for C:\Users\Anh\Desktop\HoidanIT\Java backend\2.1 Java MVC - code\01-java-spring-laptopshop-starter\src\main\java\vn\hoidanit\laptopshop\LaptopshopApplication.java. Using fallback presentation compiler.
+2026.02.06 17:40:42 INFO  no build target found for C:\Users\Anh\Desktop\HoidanIT\Java backend\2.1 Java MVC - code\01-java-spring-laptopshop-starter\src\main\java\vn\hoidanit\laptopshop\LaptopshopApplication.java. Using fallback presentation compiler.
+Feb 06, 2026 5:40:48 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Feb 06, 2026 5:40:48 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
