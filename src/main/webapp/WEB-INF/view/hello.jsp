@@ -19,7 +19,7 @@
         </head>
 
         <body>
-            hello from jsp update
+            hello from jsp
             <h1>
                 ${eric}
             </h1>

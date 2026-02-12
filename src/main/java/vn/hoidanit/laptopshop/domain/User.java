@@ -4,7 +4,7 @@ public class User {
     private long id;
     private String email;
     private String password;
-    private String fullname;
+    private String fullName;
     private String address;
     private String phone;
 
@@ -39,13 +39,13 @@ public class User {
     }
 
 
-    public String getFullname() {
-        return fullname;
+    public String getFullName() {
+        return fullName;
     }
 
 
-    public void setFullname(String fullname) {
-        this.fullname = fullname;
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
     }
 
 
