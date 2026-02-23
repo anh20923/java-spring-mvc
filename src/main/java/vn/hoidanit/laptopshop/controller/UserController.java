@@ -40,7 +40,7 @@ public class UserController {
         return "admin/user/table-user";
     }
 
-    @RequestMapping("/admin/user/{id}")
+    @RequestMapping("/admin/user/view/{id}")
     public String getUserDetailPage(Model model, @PathVariable long id){
         User user = this.userService.getUserById(id);
         model.addAttribute("id", id);
@@ -59,6 +59,13 @@ public class UserController {
         this.userService.handleSaveUser(newuser);
         return "redirect:/admin/user";
 }
+
+ //Video68
+    @RequestMapping("/admin/user/update/{id}")
+    public String getUpdateUserlPage(Model model){
+        model.addAttribute("newUser", new User());
+        return "admin/user/update";
+    }
 
 }
 
