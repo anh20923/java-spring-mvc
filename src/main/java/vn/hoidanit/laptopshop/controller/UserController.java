@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import vn.hoidanit.laptopshop.domain.User;
 import vn.hoidanit.laptopshop.service.UserService;
+
 
 
 
@@ -79,11 +81,24 @@ public class UserController {
             currentUser.setFullName(new_user.getFullName());
             currentUser.setPhone(new_user.getPhone());
 
-            this.userService.handleSaveUser(new_user);
+            this.userService.handleSaveUser(currentUser);
         }
         return "redirect:/admin/user";
-    
-
 }
+
+//Video70, delete user
+@GetMapping("/admin/user/delete/{id}")
+public String getDeleteUserPage(Model model, @PathVariable long id) {
+    model.addAttribute("id", id);
+    model.addAttribute("newUser", new User());
+    return "admin/user/delete";
+}
+
+@PostMapping("/admin/user/delete")
+public String postDeleteUser(Model model,@ModelAttribute("newUser") User new_user) {
+    this.userService.deleteAUser(new_user.getId());
+    return "redirect:/admin/user";
+}
+
 }
 
