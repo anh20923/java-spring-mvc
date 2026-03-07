@@ -6,11 +6,13 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import vn.hoidanit.laptopshop.domain.User;
 import vn.hoidanit.laptopshop.service.UserService;
+
 
 
 @Controller
@@ -55,17 +57,33 @@ public class UserController {
     }
 
     @RequestMapping(value = "/admin/user/create", method = RequestMethod.POST)
-    public String createUserPage(Model model, @ModelAttribute("newUser") User newuser){
-        this.userService.handleSaveUser(newuser);
+    public String createUserPage(Model model, @ModelAttribute("newUser") User new_user){
+        this.userService.handleSaveUser(new_user);
         return "redirect:/admin/user";
 }
 
  //Video68
     @RequestMapping("/admin/user/update/{id}")
-    public String getUpdateUserlPage(Model model){
-        model.addAttribute("newUser", new User());
+    public String getUpdateUserlPage(Model model, @PathVariable long id){
+        User currentUser = this.userService.getUserById(id);
+        model.addAttribute("newUser", currentUser);
         return "admin/user/update";
     }
 
+    //Video69, handle Update button
+    @PostMapping("/admin/user/update")
+    public String postUpdateUser(Model model, @ModelAttribute("newUser") User new_user){
+        User currentUser = this.userService.getUserById(new_user.getId());
+        if (currentUser != null){
+            currentUser.setAddress(new_user.getAddress());
+            currentUser.setFullName(new_user.getFullName());
+            currentUser.setPhone(new_user.getPhone());
+
+            this.userService.handleSaveUser(new_user);
+        }
+        return "redirect:/admin/user";
+    
+
+}
 }
 
